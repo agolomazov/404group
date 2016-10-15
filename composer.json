@@ -9,6 +9,7 @@
     }
   ],
   "require": {
-    "robmorgan/phinx": "v0.6.4"
+    "robmorgan/phinx": "v0.6.4",
+    "fzaninotto/faker": "1.6.x-dev"
   }
 }
