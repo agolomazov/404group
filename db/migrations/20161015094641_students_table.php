@@ -36,7 +36,7 @@ class StudentsTable extends AbstractMigration
             ->addColumn('birthday', 'date')
             ->addColumn('email', 'string')
             ->addColumn('ip_student', 'string')
-            ->addColumn('description', 'text')
+            ->addColumn('description', 'text', array('null' => true))
             ->addColumn('created', 'timestamp', array('default' => 'CURRENT_TIMESTAMP'))
             ->addColumn('updated', 'timestamp', array('default' => 'CURRENT_TIMESTAMP'))
             ->addIndex('ip_student', array('name' => 'idx_'.$this->tableName.'_ip_student'))

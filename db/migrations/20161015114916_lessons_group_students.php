@@ -33,8 +33,8 @@ class LessonsGroupStudents extends AbstractMigration
         $table = $this->table($this->tableName);
         $table
             ->addColumn('title_subject', 'string')
-            ->addColumn('start_datetime', 'datetime')
-            ->addColumn('end_datetime', 'datetime')
+            ->addColumn('start_datetime', 'time')
+            ->addColumn('end_datetime', 'time')
             ->addColumn('id_subject_for_group', 'integer')
             ->addIndex('start_datetime', array('name' => 'idx_'.$this->tableName.'_start_datetime'))
             ->addIndex('id_subject_for_group', array('name' => 'idx_'.$this->tableName.'_id_subject_for_group'))
