@@ -1,0 +1,14 @@
+{
+  "name": "agolomazov/404dev",
+  "description": "test task for 404 group",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Anton Golomazov",
+      "email": "cesear@bk.ru"
+    }
+  ],
+  "require": {
+    "robmorgan/phinx": "v0.6.4"
+  }
+}
