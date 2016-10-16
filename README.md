@@ -35,15 +35,5 @@ JS.
 3. Создайте БД в MySQL.
 4. Откройте файл ```./config.php``` и укажите настройки подключения к БД
 5. Откройте файл ```./phinx.yml``` и укажите настройки подключения к БД
-6. Выполните в терминале команду ```php composer/vendor/bin/phinx migrate```
-7. Последовательно выполните следующие команды:
-    * ```phinx seed:run -s SubjectSeed```
-    * ```phinx seed:run -s ListSemesters```
-    * ```phinx seed:run -s ScientificDirectors```
-    * ```phinx seed:run -s LearningYears```
-    * ```phinx seed:run -s GroupsList```
-    * ```phinx seed:run -s GroupYears```
-    * ```phinx seed:run -s StudentsList```
-    * ```phinx seed:run -s GroupStudents```
-    * ```phinx seed:run -s SubjectsForStudents```
-    * ```phinx seed:run -s LessonsSeed```
+6. Выполните в терминале команду ```vendor/bin/phinx.bat migrate```
+7. Выполните в терминале команду ```vendor/bin/phinx.bat seed:run -s SubjectSeed -s ListSemesters -s ScientificDirectors -s LearningYears -s GroupsList -s GroupYears -s StudentsList -s GroupStudents -s SubjectsForStudents -s LessonsSeed -s LessonResults```

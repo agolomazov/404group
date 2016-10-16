@@ -32,7 +32,7 @@ class ResultsStudentsSubject extends AbstractMigration
     {
         $table = $this->table($this->tableName);
         $table->addColumn('id_lesson', 'integer')
-            ->addColumn('result', 'decimal', array('scale' => 2, 'precision' => 3))
+            ->addColumn('result', 'decimal', array('scale' => 2, 'precision' => 5))
             ->addColumn('id_student', 'integer')
             ->addColumn('created', 'timestamp', array('default' => 'CURRENT_TIMESTAMP'))
             ->addColumn('updated', 'timestamp', array('default' => 'CURRENT_TIMESTAMP'))
